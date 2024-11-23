@@ -35,6 +35,9 @@ const RoomSchema = new mongoose.Schema({
 
 const Room = mongoose.model('Room', RoomSchema);
 
+app.get("/", (req,res) => {
+  res.json("Hello");
+})
 // User routes
 app.post('/signup', async (req, res) => {
   try {
