@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.signup-page {
+    display: flex;
+    flex-direction: row; /* Change to row layout */
+    min-height: 100vh;
+}
+
+.signup-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    padding: 60px;
+    background-color: #f5f5f5; /* Ensure the background color matches */
+    width: 50%; /* Adjust width as needed */
+}
+
+.signup-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.signup-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffe4e1;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signup-button:hover {
+    background-color: #ff6666;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Password error message */
+.password-error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #ffe4e1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-list li a {
+    display: inline;
+    text-decoration: none;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Aside section styling */
+.signup-aside {
+    background-color: #f5f5f5; /* Match the background color of signup-container */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    color: #333;
+    width: 50%; /* Ensure it takes the full width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1px;
+}
