@@ -10,20 +10,16 @@ import PrivacyPolicy from './project/privacypolicy';
 import React, {useState} from 'react';
 import HelpCenter from './project/helpcenter';
 import Logout from './project/logout';
+import axios from 'axios'
 function App() {
-  {/*const handleLogin = (username, password) => {
-    console.log('Logged in user:', username);
-    console.log('Password:', password);
-  };
-
-  const handleCreateRoom = (roomName, roomCode) => {
-    const newRoom = { name: roomName, code: roomCode };
-    setRooms([...rooms, newRoom]);
-  };*/}
+ 
 
   const [rooms, setRooms] = useState([]);
-
+axios.default.withCredentials = true;
+  
   const handleLogin = (username, password) => {
+    axios.post('https://safe-chat-ivory.vercel.app/register', {username, password})
+
     console.log('Logged in user:', username);
     console.log('Password:', password);
   };
